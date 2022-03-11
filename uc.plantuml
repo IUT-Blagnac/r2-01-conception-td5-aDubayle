@@ -1,0 +1,13 @@
+@startuml issue1
+
+usecase a as "Gérer les chantiers (date de début, de fin, adresse, …​)"
+usecase b as "Gérer les artisans (salaire horaire, coordonnées, …​)"
+usecase c as "Gérer les artisans qui sont affectés à \n quels chantiers (nombre d’heures effectuées par \n tel artisan sur tel chantier, début et fin de mission sur un chantier, …​)"
+usecase d as "Calculer automatiquement la paye \n d’un artisan donné pour un chantier donné"
+
+actor Entreprise 
+
+Entreprise -> a
+Entreprise -> b
+Entreprise -> c
+Entreprise ->
